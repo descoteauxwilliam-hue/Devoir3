@@ -2,20 +2,20 @@
 Appliquer le patron de conception Builder, comme nous l’avons fait en classe avec le House Builder, afin de créer un Pizza Builder.
 
 ## UML
-- [ ] IBuilder {makeDough(), makeSauce(), makeToppings()}
-- [ ] PizzaItalianBuilder
-- [ ] PizzaEspagnolBuilder
-- [ ] PizzaSenegalaiseBuilder
-- [ ] PizzaColombienneBuilder
-- [ ] Pizza -> champ {pate, sauce, garniture}
+- [x] IBuilder {makeDough(), makeSauce(), makeToppings()}
+- [x] PizzaItalianBuilder
+- [x] PizzaEspagnolBuilder
+- [x] PizzaSenegalaiseBuilder
+- [x] PizzaColombienneBuilder
+- [x] Pizza -> champ {pate, sauce, garniture}
 
 ## Pizza program
-- [ ] Implementation de Ibuilder {makeDough(), makeSauce(), makeToppings()}
-- [ ] Implementation du Director
-- [ ] Implementation de PizzaItalianBuilder
-- [ ] Implementation de PizzaEspagnolBuilder
-- [ ] Implementation de PizzaSenegalaiseBuilder
-- [ ] Implementation de PizzaColombienneBuilder
-- [ ] Implementation de Pizza
+- [x] Implementation de Ibuilder {makeDough(), makeSauce(), makeToppings()}
+- [x] Implementation du Director
+- [x] Implementation de PizzaItalianBuilder
+- [x] Implementation de PizzaEspagnolBuilder
+- [x] Implementation de PizzaSenegalaiseBuilder
+- [x] Implementation de PizzaColombienneBuilder
+- [x] Implementation de Pizza
 
 
