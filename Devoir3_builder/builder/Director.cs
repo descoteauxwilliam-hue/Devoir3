@@ -7,9 +7,9 @@ namespace Devoir3_builder.builder
 {
     public class Director
     {
-        IBuilder builder;
+        IPizzaBuilder builder;
 
-        public Director(IBuilder builder)
+        public Director(IPizzaBuilder builder)
         {
             this.builder = builder;
         }

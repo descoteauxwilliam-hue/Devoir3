@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Devoir3_builder.builder
 {
-    public class PizzaEspagnolBuilder : IBuilder
+    public class PizzaEspagnolBuilder : IPizzaBuilder
     {
         Pizza pizza;
 
@@ -13,26 +13,27 @@ namespace Devoir3_builder.builder
         {
             this.pizza = new Pizza();
         }
-        IBuilder IBuilder.makeDough()
+        public IPizzaBuilder makeDough()
         {
-            this.pizza.setPate("espagnol");
+            this.pizza.setPate("pate espagnol");
             return this;
         }
 
-        IBuilder IBuilder.makeSauce()
+        public IPizzaBuilder makeSauce()
         {
-            this.pizza.setSauce("espagnol");
+            this.pizza.setSauce("sauce espagnol");
             return this;
         }
 
-        IBuilder IBuilder.makeToppings()
+        public IPizzaBuilder makeToppings()
         {
-            this.pizza.setGarniture("espagnol");
+            this.pizza.setGarniture("garnitures espagnol");
             return this;
         }
         public Pizza make()
         {
             return this.pizza;
         }
+
     }
 }

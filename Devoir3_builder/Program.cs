@@ -2,7 +2,6 @@
 using Devoir3_builder.builder;
 using Devoir3_builder.data;
 using System.Diagnostics;
-
 test();
 
 
@@ -16,26 +15,26 @@ void test()
     director = new Director(colombienneBuilder);
     pizza = director.make();
 
-    Debug.Assert("colombienne, colombienne, colombienne" == pizza.ToString());
+    Debug.Assert("pate colombienne, sauce colombienne, garnitures colombienne" == pizza.ToString());
 
     //italien
     PizzaItalienneBuilder italienBuilder = new PizzaItalienneBuilder();
     director = new Director(italienBuilder);
     pizza = director.make();
 
-    Debug.Assert("italien, italien, italien" == pizza.ToString());
+    Debug.Assert("pate italien, sauce italien, garnitures italien" == pizza.ToString());
 
     //espagnol
     PizzaEspagnolBuilder espagnolBuilder = new PizzaEspagnolBuilder();
     director = new Director(espagnolBuilder);
     pizza = director.make();
 
-    Debug.Assert("espagnol, espagnol, espagnol" == pizza.ToString());
+    Debug.Assert("pate espagnol, sauce espagnol, garnitures espagnol" == pizza.ToString());
     
     //senegalaise
     PizzaSenegalaiseBuilder senegalBuilder = new PizzaSenegalaiseBuilder();
     director = new Director(senegalBuilder);
     pizza = director.make();
 
-    Debug.Assert("senegalaise, senegalaise, senegalaise" == pizza.ToString());
+    Debug.Assert("pate senegalaise, sauce senegalaise, garnitures senegalaise" == pizza.ToString());
 }
